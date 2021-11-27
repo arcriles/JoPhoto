@@ -31,6 +31,7 @@ public class Started2Fragment extends Fragment {
         bind = FragmentStarted2Binding.inflate(inflater, container, false);
 
         bind.btnStartedFinish.setOnClickListener(view -> {
+            onGettingStartedCompleted();
 
             Navigation.findNavController(bind.getRoot()).navigate(R.id.action_startedViewPagerFragment_to_homeActivity);
         });
@@ -39,5 +40,11 @@ public class Started2Fragment extends Fragment {
         return bind.getRoot();
     }
 
-
+    private void onGettingStartedCompleted(){
+        SharedPreferences sharedPref = requireActivity().getSharedPreferences(GETTING_STARTED_SHARED, Context.MODE_PRIVATE);
+//        sharedPref.edit();
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putBoolean(GETTING_STARTED_STATUS, true);
+        editor.apply();
+    }
 }
