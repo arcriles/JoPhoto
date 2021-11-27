@@ -37,4 +37,5 @@ public class HomeViewPagerAdapter extends FragmentStateAdapter {
     public int getItemCount() {
         return listFragment.size();
     }
+
 }
