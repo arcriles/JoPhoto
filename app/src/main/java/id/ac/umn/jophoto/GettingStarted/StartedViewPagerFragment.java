@@ -1,4 +1,4 @@
-package id.ac.umn.jophoto.gettingstarted;
+package id.ac.umn.jophoto.GettingStarted;
 
 import android.os.Bundle;
 

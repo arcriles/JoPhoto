@@ -1,4 +1,4 @@
-package id.ac.umn.jophoto.gettingstarted;
+package id.ac.umn.jophoto.GettingStarted;
 
 import android.os.Bundle;
 
@@ -9,8 +9,6 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import java.util.Objects;
 
 import id.ac.umn.jophoto.R;
 import id.ac.umn.jophoto.databinding.FragmentStarted1Binding;

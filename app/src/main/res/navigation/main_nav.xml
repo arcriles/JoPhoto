@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/startedViewPagerFragment"
-        android:name="id.ac.umn.jophoto.gettingstarted.StartedViewPagerFragment"
+        android:name="id.ac.umn.jophoto.GettingStarted.StartedViewPagerFragment"
         android:label="fragment_view_pager"
         tools:layout="@layout/fragment_started_view_pager" >
         <action

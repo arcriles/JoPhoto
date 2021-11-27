@@ -1,4 +1,4 @@
-package id.ac.umn.jophoto.gettingstarted;
+package id.ac.umn.jophoto.GettingStarted;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -11,8 +11,6 @@ import java.util.ArrayList;
 
 public class StartedViewPagerAdapter extends FragmentStateAdapter {
 
-    private FragmentManager fm;
-    private Lifecycle lifecycle;
     private ArrayList<Fragment> list;
 
     public StartedViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
