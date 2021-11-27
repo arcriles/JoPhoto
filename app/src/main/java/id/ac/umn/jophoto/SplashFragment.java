@@ -33,7 +33,10 @@ public class SplashFragment extends Fragment {
         Runnable r;
         if(checkGettingStartedStatus()){
             r = () -> {
-                Navigation.findNavController(bind.getRoot()).navigate(R.id.action_splashFragment_to_homeActivity);
+                Intent intent = new Intent(getActivity(), HomeActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                requireActivity().startActivity(intent);
+//                Navigation.findNavController(bind.getRoot()).navigate(R.id.action_splashFragment_to_homeActivity);
             };
         } else{
             r = () -> Navigation.findNavController(bind.getRoot()).navigate(R.id.action_splashFragment_to_startedViewPagerFragment);

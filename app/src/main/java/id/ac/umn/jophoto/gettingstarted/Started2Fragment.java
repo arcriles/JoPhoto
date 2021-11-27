@@ -32,8 +32,10 @@ public class Started2Fragment extends Fragment {
 
         bind.btnStartedFinish.setOnClickListener(view -> {
             onGettingStartedCompleted();
-
-            Navigation.findNavController(bind.getRoot()).navigate(R.id.action_startedViewPagerFragment_to_homeActivity);
+            Intent intent = new Intent(getActivity(), HomeActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            requireActivity().startActivity(intent);
+//            Navigation.findNavController(bind.getRoot()).navigate(R.id.action_startedViewPagerFragment_to_homeActivity);
         });
 
         // Inflate the layout for this fragment
