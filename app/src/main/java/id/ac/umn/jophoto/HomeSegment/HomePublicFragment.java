@@ -33,7 +33,7 @@ public class HomePublicFragment extends Fragment {
             R.drawable.children_five, R.drawable.children_six,
             R.drawable.children_seven, R.drawable.children_eight,
             R.drawable.children_nine, R.drawable.children_ten
-//
+
 //            R.drawable.fiction_one, R.drawable.fiction_two,
 //            R.drawable.fiction_three, R.drawable.fiction_four,
 //            R.drawable.fiction_five, R.drawable.fiction_six,
