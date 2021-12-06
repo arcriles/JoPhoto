@@ -19,6 +19,7 @@ public class StartedViewPagerFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         bind = FragmentStartedViewPagerBinding.inflate(getLayoutInflater(), container, false);
         // Inflate the layout for this fragment
 //        View view =  inflater.inflate(R.layout.fragment_view_pager, container, false);

@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.view.LayoutInflater;
@@ -50,6 +51,7 @@ public class HomePublicFragment extends Fragment {
         HomeImageViewAdapter adapter = new HomeImageViewAdapter(requireContext(), publicList);
         bind.rvHomePublic.setAdapter(adapter);
         bind.rvHomePublic.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
+//        bind.rvHomePublic.setLayoutManager(new GridLayoutManager(requireContext(), 3));
         // Inflate the layout for this fragment
         return bind.getRoot();
     }

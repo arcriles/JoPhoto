@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -25,8 +26,6 @@ public class HomeActivity extends AppCompatActivity {
 
     private ActivityHomeBinding bind;
 
-    private ArrayList<Fragment> fragmentList;
-
     private final String[] headerSegment = new String[]{"Public", "Private"};
 
     @Override
@@ -38,6 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(findViewById(R.id.include_home_toolbar));
 
         ActionBar actionBar = getSupportActionBar();
+
         assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
@@ -45,16 +45,23 @@ public class HomeActivity extends AppCompatActivity {
         bind.homeNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if(item.getItemId() == R.id.drawer_menu_profile) Log.d("heroism", "PROFILE");
-                if(item.getItemId() == R.id.drawer_menu_credits) Log.d("heroism", "CREDITS");
+                if(item.getItemId() == R.id.drawer_menu_profile) {
+                    Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                    startActivity(intent);
+                    Log.d("heroism", "PROFILE");
+                }
+                if(item.getItemId() == R.id.drawer_menu_credits) {
+                    Intent intent = new Intent(getApplicationContext(), CreditsActivity.class);
+                    startActivity(intent);
+                    Log.d("heroism", "CREDITS");
+                }
 
                 bind.homeDrawerLayout.closeDrawers();
                 return true;
             }
-
         });
 
-        fragmentList = new ArrayList<>();
+        ArrayList<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(new HomePublicFragment());
         fragmentList.add(new HomeUserFragment());
 
@@ -74,7 +81,4 @@ public class HomeActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-    //    @Override
-//    protected void onOptionsItemSelected()
 }

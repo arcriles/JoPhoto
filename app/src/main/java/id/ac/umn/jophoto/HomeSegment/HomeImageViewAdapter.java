@@ -52,5 +52,4 @@ public class HomeImageViewAdapter extends RecyclerView.Adapter<HomeImageViewAdap
             super(itemView);
         }
     }
-
 }

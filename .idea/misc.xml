@@ -3,13 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/drawable/ic_account_circle.xml" value="0.37864583333333335" />
+        <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/drawable/ic_menu.xml" value="0.37864583333333335" />
+        <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/activity_credits.xml" value="0.338768115942029" />
         <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/activity_home.xml" value="0.3625" />
         <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/activity_profile.xml" value="0.338768115942029" />
         <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/fragment_home_public.xml" value="0.3625" />
         <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/fragment_home_user.xml" value="0.3625" />
-        <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/fragment_splash.xml" value="0.3625" />
+        <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/fragment_splash.xml" value="0.264" />
         <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/fragment_started1.xml" value="0.3625" />
         <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/fragment_started2.xml" value="0.3625" />
+        <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/fragment_started_view_pager.xml" value="0.3625" />
         <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/fragment_view_pager.xml" value="0.3625" />
         <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/home_image_view_item.xml" value="0.4" />
         <entry key="..\:/A_Android_Sukses/JoPhoto/app/src/main/res/layout/nav_drawer_header.xml" value="0.3625" />
