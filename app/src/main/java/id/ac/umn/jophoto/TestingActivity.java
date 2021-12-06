@@ -28,20 +28,20 @@ public class TestingActivity extends AppCompatActivity {
         FirebaseStorage storage = FirebaseStorage.getInstance();
         StorageReference storageRef = storage.getReference();
         storageRef.child("children/children_seven.png").getBytes(Long.MAX_VALUE).addOnSuccessListener(new OnSuccessListener<byte[]>() {
-        public void onSuccess(byte[] bytes) {
-            // Use the bytes to display the image
-            Log.d("BERHASIL", "Masuk Bos");
-        }
-    }).addOnFailureListener(new OnFailureListener() {
-        public void onFailure(@NonNull Exception exception) {
-            // Handle any errors
-            Log.d("GAGAL", "Coba Lagi");
-        }
-    });
+            public void onSuccess(byte[] bytes) {
+                // Use the bytes to display the image
+                Log.d("BERHASIL", "Masuk Bos");
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            public void onFailure(@NonNull Exception exception) {
+                // Handle any errors
+                Log.d("GAGAL", "Coba Lagi");
+            }
+        });
+
 
 
     }
-
 
 
 }
