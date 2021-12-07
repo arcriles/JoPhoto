@@ -4,15 +4,22 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayoutMediator;
@@ -26,7 +33,9 @@ import id.ac.umn.jophoto.databinding.ActivityHomeBinding;
 
 public class HomeActivity extends AppCompatActivity {
 
+    private static final int CAMERA_PIC_REQUEST = 1337;
     private ActivityHomeBinding bind;
+
 
     private final String[] headerSegment = new String[]{"Public", "Private"};
 
@@ -35,6 +44,9 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bind = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(bind.getRoot());
+
+
+
 
 //        setSupportActionBar(findViewById(R.id.include_home_toolbar));
 //        ActionBar actionBar = getSupportActionBar();
@@ -46,6 +58,9 @@ public class HomeActivity extends AppCompatActivity {
 
         bind.includeHomeToolbar.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == R.id.item_home_add_photo){
+                Intent intent = new Intent(getApplicationContext(), CameraActivity.class);
+                startActivity(intent);
+
                 Log.d("Home", "Add Photo");
             }
             return false;
@@ -85,4 +100,6 @@ public class HomeActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }

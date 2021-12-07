@@ -7,4 +7,5 @@
         android:icon="@drawable/ic_add"
         android:title="Add Photo"
         app:showAsAction="ifRoom" />
+
 </menu>
