@@ -46,8 +46,6 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(bind.getRoot());
 
 
-
-
 //        setSupportActionBar(findViewById(R.id.include_home_toolbar));
 //        ActionBar actionBar = getSupportActionBar();
 //        assert actionBar != null;
@@ -62,6 +60,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
 
                 Log.d("Home", "Add Photo");
+                
             }
             return false;
         });
