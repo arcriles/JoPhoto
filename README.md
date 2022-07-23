@@ -1,7 +1,7 @@
 # JoPhoto
 Classified Project
 
-a simple project to let user View a photo through phone app
+       A simple project to let user view photos through phone app
 
 Arcriles Thungriallu - 37499
 Joel Alfa Nugraha - 36934
